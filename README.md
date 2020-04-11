@@ -12,6 +12,10 @@ Vasundhara Singh - D19034 </br>
 
 We used CIFAR-10 dataset for our experiments with DenseNet Architecture. 
 
+#### No of params in model is  931420
+
+#### Accuracy : 91.81(35 epochs)
+
 The directory is defined as 
 
 ![](dir_struct.png)

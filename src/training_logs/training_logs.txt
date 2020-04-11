@@ -1,15 +1,50 @@
-Saving the current best model. Previous best loss = inf Current best loss = 1.4645100887298583
-[ Epochs 0 | 10 ] :  train Loss: 1.4152 Acc: 0.4841 val Loss: 1.4645 Acc: 0.5028
-Saving the current best model. Previous best loss = 1.4645100887298583 Current best loss = 0.8584263829231262
-[ Epochs 1 | 10 ] :  train Loss: 0.9305 Acc: 0.6694 val Loss: 0.8584 Acc: 0.7027
-Saving the current best model. Previous best loss = 0.8584263829231262 Current best loss = 0.7046102540969849
-[ Epochs 2 | 10 ] :  train Loss: 0.7199 Acc: 0.7483 val Loss: 0.7046 Acc: 0.7559
-[ Epochs 3 | 10 ] :  train Loss: 0.5833 Acc: 0.7961 val Loss: 0.7230 Acc: 0.7549
-Saving the current best model. Previous best loss = 0.7046102540969849 Current best loss = 0.668228279876709
-[ Epochs 4 | 10 ] :  train Loss: 0.5044 Acc: 0.8259 val Loss: 0.6682 Acc: 0.7807
-[ Epochs 5 | 10 ] :  train Loss: 0.4451 Acc: 0.8461 val Loss: 0.6870 Acc: 0.7740
-Saving the current best model. Previous best loss = 0.668228279876709 Current best loss = 0.4274372066497803
-[ Epochs 6 | 10 ] :  train Loss: 0.4084 Acc: 0.8603 val Loss: 0.4274 Acc: 0.8538
-[ Epochs 7 | 10 ] :  train Loss: 0.3640 Acc: 0.8734 val Loss: 0.6149 Acc: 0.7998
-[ Epochs 8 | 10 ] :  train Loss: 0.3325 Acc: 0.8845 val Loss: 0.4299 Acc: 0.8576
-[ Epochs 9 | 10 ] :  train Loss: 0.3107 Acc: 0.8932 val Loss: 0.5740 Acc: 0.8271
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = inf Current best loss = 1.4652540996551513
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 0 | 35 ] :  train Loss: 1.4999 Acc: 0.4465 val Loss: 1.4653 Acc: 0.4999
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 1.4652540996551513 Current best loss = 1.311779135131836
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 1 | 35 ] :  train Loss: 1.0373 Acc: 0.6284 val Loss: 1.3118 Acc: 0.5883
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 1.311779135131836 Current best loss = 1.0657950094223023
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 2 | 35 ] :  train Loss: 0.8586 Acc: 0.6949 val Loss: 1.0658 Acc: 0.6377
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 1.0657950094223023 Current best loss = 0.7882007273674011
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 3 | 35 ] :  train Loss: 0.7392 Acc: 0.7421 val Loss: 0.7882 Acc: 0.7377
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 4 | 35 ] :  train Loss: 0.6521 Acc: 0.7754 val Loss: 1.1612 Acc: 0.6635
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.7882007273674011 Current best loss = 0.5597876172542572
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 5 | 35 ] :  train Loss: 0.5888 Acc: 0.7978 val Loss: 0.5598 Acc: 0.8084
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 6 | 35 ] :  train Loss: 0.5400 Acc: 0.8133 val Loss: 0.6458 Acc: 0.7861
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.5597876172542572 Current best loss = 0.529998431110382
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 7 | 35 ] :  train Loss: 0.4995 Acc: 0.8305 val Loss: 0.5300 Acc: 0.8182
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.529998431110382 Current best loss = 0.4658850176334381
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 8 | 35 ] :  train Loss: 0.4661 Acc: 0.8400 val Loss: 0.4659 Acc: 0.8444
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 9 | 35 ] :  train Loss: 0.4387 Acc: 0.8504 val Loss: 0.5594 Acc: 0.8177
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 10 | 35 ] :  train Loss: 0.4148 Acc: 0.8587 val Loss: 0.4957 Acc: 0.8370
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.4658850176334381 Current best loss = 0.44875309739112856
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 11 | 35 ] :  train Loss: 0.3946 Acc: 0.8655 val Loss: 0.4488 Acc: 0.8501
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.44875309739112856 Current best loss = 0.4307628736972809
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 12 | 35 ] :  train Loss: 0.3728 Acc: 0.8709 val Loss: 0.4308 Acc: 0.8539
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 13 | 35 ] :  train Loss: 0.3570 Acc: 0.8785 val Loss: 0.4371 Acc: 0.8570
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.4307628736972809 Current best loss = 0.3905337661504745
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 14 | 35 ] :  train Loss: 0.3444 Acc: 0.8826 val Loss: 0.3905 Acc: 0.8684
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 15 | 35 ] :  train Loss: 0.3278 Acc: 0.8874 val Loss: 0.4502 Acc: 0.8625
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.3905337661504745 Current best loss = 0.34673454790115354
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 16 | 35 ] :  train Loss: 0.3229 Acc: 0.8885 val Loss: 0.3467 Acc: 0.8812
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 17 | 35 ] :  train Loss: 0.3058 Acc: 0.8948 val Loss: 0.4381 Acc: 0.8560
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 18 | 35 ] :  train Loss: 0.2949 Acc: 0.8975 val Loss: 0.3599 Acc: 0.8837
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 19 | 35 ] :  train Loss: 0.2868 Acc: 0.9021 val Loss: 0.3973 Acc: 0.8755
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 20 | 35 ] :  train Loss: 0.2761 Acc: 0.9060 val Loss: 0.3957 Acc: 0.8660
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 21 | 35 ] :  train Loss: 0.2681 Acc: 0.9094 val Loss: 0.3504 Acc: 0.8829
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.34673454790115354 Current best loss = 0.2676535522460938
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 22 | 35 ] :  train Loss: 0.1988 Acc: 0.9325 val Loss: 0.2677 Acc: 0.9120
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.2676535522460938 Current best loss = 0.2585829415798187
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 23 | 35 ] :  train Loss: 0.1741 Acc: 0.9407 val Loss: 0.2586 Acc: 0.9145
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.2585829415798187 Current best loss = 0.2512945168495178
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 24 | 35 ] :  train Loss: 0.1670 Acc: 0.9443 val Loss: 0.2513 Acc: 0.9171
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 25 | 35 ] :  train Loss: 0.1573 Acc: 0.9464 val Loss: 0.2623 Acc: 0.9156
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt Saving the current best model. Previous best loss = 0.2512945168495178 Current best loss = 0.24890395350456238
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 26 | 35 ] :  train Loss: 0.1519 Acc: 0.9478 val Loss: 0.2489 Acc: 0.9194
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 27 | 35 ] :  train Loss: 0.1523 Acc: 0.9468 val Loss: 0.2601 Acc: 0.9169
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 28 | 35 ] :  train Loss: 0.1487 Acc: 0.9490 val Loss: 0.2576 Acc: 0.9215
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 29 | 35 ] :  train Loss: 0.1436 Acc: 0.9514 val Loss: 0.2521 Acc: 0.9203
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 30 | 35 ] :  train Loss: 0.1374 Acc: 0.9536 val Loss: 0.2647 Acc: 0.9179
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 31 | 35 ] :  train Loss: 0.1362 Acc: 0.9532 val Loss: 0.2612 Acc: 0.9171
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 32 | 35 ] :  train Loss: 0.1321 Acc: 0.9551 val Loss: 0.2664 Acc: 0.9178
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 33 | 35 ] :  train Loss: 0.1292 Acc: 0.9561 val Loss: 0.2594 Acc: 0.9182
+src/training_logs/training_logs.txt src/training_logs/training_logs.txt [ Epochs 34 | 35 ] :  train Loss: 0.1261 Acc: 0.9556 val Loss: 0.2626 Acc: 0.9181

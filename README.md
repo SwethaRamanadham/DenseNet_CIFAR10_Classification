@@ -1,6 +1,16 @@
-# Flask Image Classification
+# DenseNet_CIFAR10_Classification
 
-This repo comprises of training DenseNet from scratch on cifar10 and then using Flask for Model serving.
+DenseNet implementation on CIFAR10
+
+
+## Team
+Anusha Gajinkar - D19008 </br>
+Arjun Kumar Singh - D19009 </br>
+Swetha R  - D19031 </br>
+Sree Soundarya -D19030 </br>
+Vasundhara Singh - D19034 </br>
+
+We used CIFAR-10 dataset for our experiments with DenseNet Architecture. 
 
 The directory is defined as 
 

@@ -2,8 +2,32 @@ from ..model import getModel
 from ..data import Cifar10Data
 from tqdm import trange
 import torch
+from torch import optim
 from pathlib import Path
 from functools import partial
+from torch.optim import lr_scheduler
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+import torch
+from torch import nn
+from torch import optim
+from torch.utils.data import DataLoader
+import torch.nn.functional as F
+from torchvision import datasets , transforms
+from torch.optim import lr_scheduler
+
+from tqdm import tqdm
+
+import random
+import PIL 
+from PIL import Image
+
+from torch.autograd import Variable
+from collections import OrderedDict
+import math
+from pathlib import Path
 
 def check_for_dir(*args_path):
     for path in args_path:
@@ -27,7 +51,8 @@ def train_model(model,
           save_model_filename="saved_weights.pt",
           log_filename="training_logs.txt"):
     if optimizer is None:
-        optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+        optimizer = optim.SGD(model.parameters(), lr=0.01,weight_decay=1e-4,momentum=0.9,nesterov=True,dampening=0)
+    scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, 'min',patience=4,min_lr=1e-5,verbose=True)
     if criterion is None:
         criterion =torch.nn.CrossEntropyLoss()
     global logger
@@ -42,6 +67,7 @@ def train_model(model,
     best_val_loss = float("inf")
     for epoch in trange(num_epochs,desc="Epochs"):
         result = [f"[ Epochs {epoch} | {num_epochs} ] : "]
+
         for phase in ['train', 'val']:
             if phase=="train":     # put the model in training mode
                 model.train()
@@ -82,6 +108,7 @@ def train_model(model,
                     best_val_loss = epoch_loss
                     torch.save(model.module.state_dict(),save_model_filename_path)
             result.append('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
+        scheduler.step(best_val_loss)   
         logger(" ".join(result))
 
 

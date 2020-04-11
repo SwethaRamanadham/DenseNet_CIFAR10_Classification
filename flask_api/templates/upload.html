@@ -1,11 +1,126 @@
+<style>
+   
+    h1, h2 {
+        color: white;
+    }
+    .media-group {
+        display: grid;
+        margin: 20px 0 0;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .label-media {
+        cursor: pointer;
+        padding: 0px;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        width: 191px;
+        height: 100px;
+        position: relative;
+    }
+    .labeltext {
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    label, #heading {
+        color: white;
+    }
+    span {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 37px;
+    }
+    .edit {
+        text-align: right;
+        top: -29px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .uploaded {
+        border: 0px;
+    }
+    #image {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .submit {
+    	cursor: pointer;
+        width: 200px;
+        height: 32px;
+        color: white;
+        letter-spacing: 0.4px;
+        border-radius: 0.25rem;
+        background: #393e48;
+        font-size: 14px;
+    }
+    .disabled{
+    	cursor: not-allowed;
+    }
+    #heading {
+        height: 20px;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+    }
+    .containers {
+    	align-items: center;
+    	margin-top: 80px;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .leftLayout {
+        width: 30%;
+    }
+    .layouttext {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myFile");
+        if (x && x.files.length > 0) {
+            console.log(x.files[0])
+            document.getElementById("heading").innerHTML = x.files[0].name;
+            const blobFile =  x.files[0];
+            document.getElementById("upper").disabled= false;
+            document.getElementById("upper").classList.remove("disabled");
+            document.getElementById("image").src = URL.createObjectURL(blobFile);
+        }
+    }
+</script>
 {% extends"layout.html" %}
 {% block content %}
-
-        <h4>
-            <p>Upload the image and get results.</p>
-        </h4>
-    <form method="POST" enctype="multipart/form-data" action={{ url_for("upload_image_file") }}>
-        <input type="file" name="file" accept="image/*" >
-        &emsp;&emsp;&emsp; <input type="submit" value="Upload" name="submit">
-    </form>
+    <h1>DenseNet CIFAR10 Classification</h1>
+    <div class="containers">
+        <div class="leftLayout">
+            <img src="/static/img/densenet1.png">
+        </div>
+        <div class="layouttext">
+            <h2>Upload the image and get results.</h2>
+            <form method="POST" enctype="multipart/form-data" action={{ url_for("upload_image_file") }}>
+                <div class="col-sm-2 media-group">
+                    <label class="labeltext">Choose a image*</label>
+                    <label class="col-form-label label-media">
+                    <span>&#43;</span>
+                    <img id="image">
+                    <input name="file" id="myFile" accept="image/*" onchange="myFunction()" class="upload media form-control" type="file">
+                    </label>
+                </div>
+                <h4 id="heading"></h4>
+                <input type="submit" value="Upload" class="submit disabled" name="submit" disabled id="upper">
+            </form>
+        </div>
+    </div>
 {% endblock %}

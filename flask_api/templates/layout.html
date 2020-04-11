@@ -2,14 +2,56 @@
 
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <title>Flask Image Classification</title>
+    <style>     
+   body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}   
+    h4{
+    	margin-left: 20px;
+    	color: white;
+
+    }
+    ul{
+    	color: white;
+    }
+   .Team {
+   	margin-top: 20px;
+    width: 92%;
+    height: 130px;
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: flex-end;
+    /* background-color: white; */
+}
+    </style>
+}
 
 </head>
 
-<body>
+<body style="background:url(/static/img/Background.jpg) center / cover no-repeat;"> 
 
 {% block content %}{% endblock %}
+<div class="Team">
+	<div>
+		<h4>Team No : 5 </h4>
+		<ul>
+			<li>Anusha Gajinkar - D19008</li>
+			<li>Arjun Kumar Singh - D19009</li>
+			<li>Swetha R - D19031</li>
+			<li>Sree Soundarya -D19030</li>
+			<li>Vasundhara Singh - D19034</li>
+		</ul>
+	</div>
+</div>
 </body>
 
 </html>

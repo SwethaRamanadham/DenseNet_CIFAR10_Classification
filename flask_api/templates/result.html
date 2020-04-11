@@ -1,7 +1,23 @@
+<style>
+        h2, h3,h1 {
+                color: white;
+                letter-spacing: 0.4px;
+        }
+       .containers {
+    	margin-top: 80px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+</style>
 {% extends"layout.html" %}
 {% block content %}
-
-        <h2>Result</h2>
-        <img src="{{ image_path }}" alt="Input Image" height="50" width="50"> 
-        <h3>{{ result }} </h3>
+		<h1>DenseNet CIFAR10 Classification</h1>
+		<div class="containers">
+        	<h2>Result</h2>
+        	<img src="{{ image_path }}" alt="Input Image" height="100" width="191"> 
+        	<h3>{{ result }} </h3>
+        </div>	
 {% endblock %}
